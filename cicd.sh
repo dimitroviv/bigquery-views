@@ -15,11 +15,11 @@ bq_safe_mk() {
     fi
 }
 
-for dir_entry in $(find ./$views_dir -mindepth 1 -maxdepth 1 -type d -printf '%f\n')
-do
-  echo "$dir_entry"
-  bq_safe_mk $dir_entry
-done
+#for dir_entry in $(find ./$views_dir -mindepth 1 -maxdepth 1 -type d -printf '%f\n')
+#do
+##  echo "$dir_entry"
+#  bq_safe_mk $dir_entry
+#done
 
 for file_entry in $(find ./$views_dir -type f -follow -print)
 do
