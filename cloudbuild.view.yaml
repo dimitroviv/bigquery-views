@@ -6,5 +6,6 @@ steps:
 timeout: 1200s
 substitutions:
   _SQL_FILE: none
+serviceAccount: 'projects/$PROJECT_ID/serviceAccounts/bq-views-sa@gcp-solution-dev.iam.gserviceaccount.com'
 options:
     substitution_option: 'ALLOW_LOOSE'
