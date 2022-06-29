@@ -5,7 +5,7 @@ views_dir=$2
 location=${3:-EU}  
 
 bq_safe_mk() {
-    dataset=$1
+    dataset=id_test_build
     exists=$(bq ls -d | grep -w $dataset)
     if [ -n "$exists" ]; then
        echo "Not creating $dataset since it already exists"
