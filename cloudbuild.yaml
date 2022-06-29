@@ -6,3 +6,5 @@ steps:
 timeout: 1200s
 substitutions:
   _VIEWS_DIR: views
+options:
+  logging: CLOUD_LOGGING_ONLY
